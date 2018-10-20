@@ -1,0 +1,168 @@
+html,body{
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+    cursor: url('http://www.rw-designer.com/cursor-view/115409.png') 12 32, auto;
+}
+
+#mainCanvas{
+    width: 100%;
+    height: 100%;
+}
+
+.main_title {
+    position: fixed;
+    top: 5%;
+    left: calc((100vw - 150px)/2);
+    width: 150px;
+    height: 40px;
+    font-family: 'Mali', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fec8d8;
+    border: none;
+    border-radius: 15px;
+}
+
+#roomNumber {
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: calc((100vh - 240px)/2);
+    right: 0;
+}
+
+.sidebar > button {
+    background-color: #cceeff;
+    border: none;
+    box-shadow: 0 5px #ccddee;
+    color: black;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    height: 60px;
+}
+.sidebar > button:active {
+    background-color: #ccddff;
+    box-shadow: 0 2px #ccccff;
+    transform: translateY(4px);
+}
+
+.sidebar > button:first-child {
+    border-top-left-radius: 15px;
+}
+
+.sidebar > button:last-child {
+    border-bottom-left-radius: 15px;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #afcbff;
+    padding: 20px;
+    border: none;
+    width: 70%;
+    height: 45%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px #6eb5ff;
+}
+
+.modal-title {
+    text-align: center;
+    font-family: 'Mali', cursive;
+    font-size: 30px;
+}
+
+.input {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input > input{
+    padding-left: 15px;
+    outline: none;
+    height: 30px;
+
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+}
+
+.roomName {
+    font-family: 'Mali', cursive;
+}
+
+.roomNameI {
+    border-radius: 15px;
+    border: none;
+    width: 60%;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: #d5aaff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #b28dff;
+    color: black;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.submit:active {
+    background-color: #d5aaff;
+    box-shadow: 0 2px #b28dff;
+    transform: translateY(4px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

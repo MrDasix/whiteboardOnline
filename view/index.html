@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Pinturillo 3</title>
+
+        <link rel="stylesheet" type="text/css" href="./main.css">    
+        <script src="/socket.io/socket.io.js"></script>    
+        <script type='text/javascript' src="./main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    </head>
+
+    <body onload="init()">
+        <div id="body">
+            <canvas id="mainCanvas" ></canvas>
+
+            <div class="main_title"><span>Room: </span><span id="roomNumber"></span></div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <!--<span class="close" onClick="onClose()">&times;</span>-->
+                    <p class="modal-title">Room Name</p>
+                    <div class="input">
+                        <input id="roomName" type="text" name="roomName" class="roomNameI">
+                    </div>
+                    <footer>
+                        <button id="submit" type="button" name="button" class="submit" onClick="onSubmit()">Enter Room</button>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <button onClick="setBrush()" id="brush" style="background-color: #d0ccff"> <i class="fas fa-circle"></i>  </button>
+                <button onClick="setErase()" id="erase"> <i class="fas fa-eraser fa-2x"></i> </button>
+                <button onClick="changeColor()" id="colorChanger"> <i class="fas fa-palette fa-2x"></i> </button>
+                <button id="clearCanvas" onClick="clearCanvas()">CLEAR</button>
+            </div>
+        </div> 
+    </body>
+</html>
